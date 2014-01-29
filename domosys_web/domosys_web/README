@@ -1,0 +1,5 @@
+Think of generating, in the same folder of settings.py :
+  * a new secret key in the file 'SECRET_KEY'
+  * the list of allowed hosts, ended with '\n', in the file 'ALLOWED_HOSTS'
+  * your user's password for your database in the file 'pg_django.pass' (see settings.py, line 104)
+
