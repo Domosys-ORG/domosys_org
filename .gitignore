@@ -14,4 +14,5 @@ __pycache__/
 *.sock
 
 
-
+# Secret key think of generating one new in this file
+domosys_web/domosys_web/secret.key
