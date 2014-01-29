@@ -14,5 +14,7 @@ __pycache__/
 *.sock
 
 
-# Secret key think of generating one new in this file
-domosys_web/domosys_web/secret.key
+# Secret things, think of generating them !
+domosys_web/domosys_web/SECRET_KEY
+domosys_web/domosys_web/ALLOWED_HOSTS
+domosys_web/domosys_web/pg_django.pass

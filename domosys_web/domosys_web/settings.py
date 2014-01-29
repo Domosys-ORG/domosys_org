@@ -18,14 +18,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c82h&dr*nuktyz(9hi51$1jk$pgmxz*f17&fs+a@vj9u^@%_cs'
+SECRET_KEY = open("domosys_web/SECRET_KEY", "r").read()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.10',]
+ALLOWED_HOSTS = open("domosys_web/ALLOWED_HOSTS", "r").read().split('\n')
 
 TEMPLATE_DIRS = (
     BASE_DIR + '/templates/'
@@ -101,7 +101,7 @@ DATABASES = {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
 		'NAME': 'django',
 		'USER': 'django', 
-		'PASSWORD': 'Z7v4D$4ng0', 
+		'PASSWORD': open("domosys_web/pg_django.pass", "r").read(), 
 		'HOST': 'localhost', 
 		'PORT': '', 
 	}
@@ -153,7 +153,7 @@ if not DEBUG:
 	CACHES = {
 		"default": {
 			"BACKEND": "redis_cache.cache.RedisCache",
-			"LOCATION": "192.168.1.31:6379:0",
+			"LOCATION": "localhost:6379:0",
 			"OPTIONS": {
 			    "CLIENT_CLASS": "redis_cache.client.DefaultClient",
 			}
