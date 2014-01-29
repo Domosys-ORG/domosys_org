@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
+import os, sys
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 #SESSION_ENGINE='django.contrib.sessions.backends.cached_db'
@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = open("domosys_web/SECRET_KEY", "r").read()
+SECRET_KEY = open("domosys_web/SECRET_KEY", "r").read().rstrip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -101,7 +101,7 @@ DATABASES = {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
 		'NAME': 'django',
 		'USER': 'django', 
-		'PASSWORD': open("domosys_web/pg_django.pass", "r").read(), 
+		'PASSWORD': open("domosys_web/pg_django.pass", "r").read().rstrip(), 
 		'HOST': 'localhost', 
 		'PORT': '', 
 	}
