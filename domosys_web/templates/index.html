@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block container %}
+<div class="container" id="home">
+<section id="{{ section.classid }}">
+<center><img id="mobmap" src="static/img/mob.png"/></center>
+
+<div id="cellier-vmc" class="mqtt-widget actuator vmc offonhigh"></div>
+
+<div id="plantes-light" class="mqtt-widget actuator light slide"></div>
+
+<div id="salon-cool" class="mqtt-widget actuator light slide"></div>
+
+<div id="salon-white" class="mqtt-widget actuator light slide"></div>
+
+</section>
+</div>
+
+{% endblock %}
+

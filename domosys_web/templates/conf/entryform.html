@@ -1,0 +1,10 @@
+{% if form %}
+<form class="container" id="form-config" method="post">
+{% csrf_token %}
+		{{ form.as_p }}
+<!--<input type="submit" value="Valider" />-->
+<button class="bouton" id="post-config">Valider</button>
+<button class="bouton delete" id="delete-config">Supprimer</button>
+</form>
+{% endif %}
+

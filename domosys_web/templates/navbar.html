@@ -1,0 +1,28 @@
+<script type="text/javascript">
+$(document).ready(function() {
+	var navbar = $("#navbar");
+	$("#navshow").hide();
+	$("#navhide").click(function() {
+		$(navbar).animate({width: 0}, 200, function() {
+			$(navbar).hide();
+			$("#navshow").show();
+		});
+		
+	});
+	$("#navshow").click(function() {
+		$(navbar).show().animate({width: 100}, 200);
+		$("#navshow").hide();
+	});
+});
+
+</script>
+<aside id="navbar" class="navbar">
+
+<div class="bouton" id="navhide">&gt;</div>
+<nav>
+NAVBAR<br/>
+</nav>
+	{% include "marvin.html" %}
+</aside>
+<div class="bouton" id="navshow">&lt;</div>
+

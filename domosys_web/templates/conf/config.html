@@ -1,0 +1,45 @@
+{% block container %}
+<script type="text/javascript" src="static/js/config.js" > </script>
+<div id="config-container">
+<div class="accordion" id="config">
+	<h5>ACTUATORS</h5>
+	<div>
+		<ul id="actuators" class="list">
+			{% for actuator in actuator_list %}
+				<li class="config">
+					<a href='#' class="actuator" id="{{ actuator.id }}">{{ actuator.caption }}</a>
+				</li>
+			{% endfor %}
+				<li class="config" id="add-actuator">
+					<a href='#' class="actuator" id="0">Nouveau</a>
+				</li>
+		</ul>
+	</div>
+	<h5>SENSORS</h5>
+	<div>
+		<ul id="sensors" class="list">
+			{% for sensor in sensor_list %}
+				<li class="config"><a href='#' class="sensor" id="{{ sensor.id }}">{{ sensor.caption }}</a></li>
+			{% endfor %}
+				<li class="config" id="add-sensor">
+					<a href='#' class="sensor" id="0">Nouveau</a>
+				</li>
+		</ul>
+	</div>
+	<h5>SCENARS</h5>
+	<div>
+		<ul id="scenars" class="list">
+			{% for scenars in scenars_list %}
+				<li class="config"><a href='#' class="scenars" id="{{ scenars.id }}">{{ scenars.caption }}</a></li>
+			{% endfor %}
+				<li class="config" id="add-scenar">
+					<a href='#' class="scenar" id="0">Nouveau</a>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="form" id="config">
+</div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,359 @@
+body {
+	margin: 0px;
+	background: #272B30;
+	color: white;
+	font-family: "Geneva", sans-serif;
+	font-size: 0.8em;
+}
+body.wait *, body.wait
+{
+    cursor: progress !important;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:active {
+	color: #313539;
+}
+a:visited {
+	color: #AAA;
+}
+a:hover {
+	color: #94FF8E;
+}
+nav {
+	line-height: 14px;
+}
+input {
+	background:#272B30;
+	color: white;
+}
+center {
+	margin: 0 auto;
+}
+.fixed-menu {
+	background: transparent;
+/*	border: 1px solid black;*/
+	position: fixed;
+}
+.header-button {
+	cursor: pointer;
+	border-radius: 0px;
+	padding: 10px 15px 10px 15px;
+	border: 1px solid transparent;
+	box-shadow: 0px 0px 3px #272B30;
+
+/*	padding: 10px 0px 10px 0px;*/
+/*	margin-bottom: 10px;*/
+	position: relative;
+/*	bottom: 0;*/
+/*	left:0;*/
+/*	width: 100%;*/
+/*	height: 140px;*/
+	display: inline;
+	background-image:linear-gradient(#313539,#3a3f44 60%,#484e55);
+	border-bottom: 1px solid #3a3f44;
+/*	border-radius: 15px 15px 0px 0px;*/
+	float:left;
+}
+.header-button:hover {
+	border:1px solid #94FF8E;
+	box-shadow: 0px 0px 3px #94FF8E;
+/*	background: #272B30;*/
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+}
+.header-button:first-child {
+	border-radius: 0px 0px 0px 10px;
+}
+/*.menu-button:nth()-child {*/
+/*	border-radius: 0px 10px 10px 0px;*/
+/*}*/
+.header-button:last-child {
+	border-radius: 0px 15px 15px 0px;
+}
+.socket-button {
+	font-family: "Geneva", sans-serif;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius: 0px;
+	padding: 8px 15px 8px 15px;
+	border: 1px solid transparent;
+	box-shadow: 0px 0px 3px #272B30;
+	position: relative;
+	display: inline;
+	background-image:linear-gradient(#313539,#3a3f44 60%,#484e55);
+	border-bottom: 1px solid #3a3f44;
+	float:left;
+}
+.socket-button:hover {
+	border:1px solid #272B30;
+	box-shadow: 0px 0px 3px #272B30;
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+}
+.socket-button:first-child {
+	border-radius: 0px 0px 0px 10px;
+}
+.socket-button:last-child {
+	border-radius: 0px 15px 15px 0px;
+}
+.error {
+	color: red;
+	border:2px solid red;
+	box-shadow: 0px 0px 5px red;
+}
+.tab {
+	background-image:linear-gradient(#313539,#3a3f44 60%,#484e55);
+	padding: 10px 15px 10px 15px;
+	margin:0 auto;
+	border: 1px solid transparent;
+	box-shadow: 0px -3px 3px #272B30;
+	position: relative;
+	float: left;
+	border-radius: 0px;
+}}
+.tab:hover {
+	border:1px solid #94FF8E;
+	box-shadow: 0px -1px 3px #94FF8E;
+/*	background: #272B30;*/
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+}
+.tab:first-child {
+	border-radius: 15px 0px 0px 0px;
+	box-shadow: -3px -3px 3px #272B30;
+}
+.tab:first-child:hover {
+	border-radius: 15px 0px 0px 0px;
+	box-shadow: -1px -1px 3px #94FF8E;
+}
+.tab:last-child {
+	border-radius: 0px 15px 0px 0px;
+	box-shadow: 3px -3px 2px #272B30;
+}
+.tab:last-child:hover {
+	border-radius: 0px 15px 0px 0px;
+	box-shadow: 1px -1px 3px #94FF8E;
+}
+.on {
+	color: #94FF8E;
+	background-image:linear-gradient(#313539,#3a3f44 60%,#484e55);
+}
+/*.on:hover {*/
+/*	border:1px solid #FF8C21;*/
+/*	box-shadow: 0px 0px 3px #FF8C21;*/
+/*	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);*/
+/*}*/
+.off {
+	color: #FF8C21;
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+}
+.off:hover {
+	border:1px solid #94FF8E;
+	box-shadow: 0px 0px 3px #94FF8E;
+	background-image:linear-gradient(#313539,#3a3f44 60%,#484e55);
+}
+
+.console {
+	padding: 4px;
+/*	margin:0 !important;*/
+	background:#484e55;
+	height: 100%;
+	width: 100%;
+/*	display: inline-block;*/
+}
+.navbar {
+	width: 200px;
+	padding: 10px 15px 10px 10px;
+	margin-bottom: 5px;
+/*	position: relative;*/
+	float: right;
+/*	display: inline-block;*/
+	background: repeat-x scroll right top linear-gradient(#484e55,#3a3f44 60%,#272B30);
+	border-left:1px solid #94FF8E;
+	border-bottom:1px dotted #94FF8E;
+	border-radius: 15px 0px 0px 15px;
+}
+.toggle-bar {
+	width: 90%;
+	height: 20px;
+	padding: 10px 15px 10px 10px;
+	margin: 0px;
+/*	position: relative;*/
+	float: right;
+/*	display: inline-block;*/
+	background: linear-gradient(#484e55,#3a3f44 60%,#272B30);
+	border-left:1px solid #94FF8E;
+	border-bottom:1px dotted #94FF8E;
+	border-radius: 0px;
+	pointer:cursor;
+}
+.toggle-bar:first-child {
+	border-radius: 15px 0px 0px 0px;
+}
+.toggle-bar:last-child {
+	border-radius: 0px 0px 0px 15px;
+/*	border-bottom:1px solid #272B30;*/
+}
+.bouton {
+	padding: 3px 10px 5px 10px;
+	margin: 0 auto;
+	background: transparent;
+	border:1px solid #888;
+	box-shadow: 0px 0px 10px transparent;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	display: inline;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+.bouton:hover {
+	border:1px solid #94FF8E;
+	box-shadow: 0px 0px 3px rgb(148,255,142);
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+/*	background: #272B30;*/
+/*	margin-bottom: 2em;*/
+}
+.bouton:active {
+	border:1px solid #94FF8E;
+	box-shadow: 0px 0px 3px #94FF8E;
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+/*	background: #272B30;*/
+}
+.delete {
+	float:right;
+/*	margin-bottom: 2em;*/
+}
+.delete:hover {
+	border:1px solid #FF8C21;
+	box-shadow: 0px 0px 3px #FF8C21;
+}
+.menu, .bouton, .footer-button {
+	-webkit-transition: border linear 0.3s, box-shadow linear 0.3s, background-image linear 0.3s;
+	-moz-transition: border linear 0.3s, box-shadow linear 0.3s, background-image linear 0.3s;
+	-o-transition: border linear 0.3s, box-shadow linear 0.3s, background-image linear 0.3s;
+	transition: border linear 0.3s, box-shadow linear 0.3s, background-image linear 0.3s;
+}
+.container {
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+	border-radius: 15px;
+	border:1px solid #94FF8E;
+}
+.page-active {
+	border-color: #FF8C21;
+	color: #FF8C21;
+}
+.box {
+	position: fixed;
+	padding: 4px;
+/*	margin: 0 auto;*/
+/*	display: block;*/
+/*	margin-bottom: 4px;*/
+	top: 20%;
+	left: 30%;
+	width: 25%;
+/*	height: 15%;*/
+/*	padding: 10px 15px 10px 10px;*/
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 15px;
+}
+.box-header {
+/*	position: fixed;*/
+	border-radius: 15px 15px 0 0;
+	border-right: 1px solid #94FF8E;
+	border-left: 1px solid #94FF8E;
+	border-bottom: 1px solid #94FF8E;
+	box-shadow: 0px -2px 5px #94FF8E;
+/*	margin: 0 auto;*/
+}
+.box-title {
+	color: #94FF8E;
+	font-size: 1.2em;
+	padding:5px;
+	text-align: center;
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+	border-radius: 15px 15px 0 0;
+	border: 1px dashed #484e55;
+}
+.box-subject {
+/*	position: fixed;*/
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#FF8C21);
+/*	background-image:linear-gradient(#272B30, #3a3f44 80%,#484e55);*/
+	font-size: 1.2em;
+	padding:5px;
+	text-align: center;
+}
+.box-body {
+/*	margin: 0 auto;*/
+/*	float: top;*/
+/*	display: block;*/
+/*	position:relative;*/
+/*	width: 100%;*/
+/*	height: 100%;*/
+	border-bottom: 1px solid #FF8C21;
+	border-right: 1px solid #FF8C21;
+	border-left: 1px solid #FF8C21;
+	background-image:linear-gradient(#484e55, #3a3f44 20%,rgba(39,43,48,0.8));
+/*	position: fixed;*/
+	padding: 20px 10px 20px 10px;
+	border-radius: 0 0 15px 15px;
+	box-shadow: 0px 2px 5px #FF8C21;
+}
+/*.box-form {*/
+/*	margin: 0 auto;*/
+/*}*/
+.form-row {
+	padding: 5px 0 5px 0;
+}
+label.form-row {
+	padding: 5px;
+}
+.page {
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+	border-radius: 15px;
+}	
+aside.console {
+	position:absolute;
+	bottom:0;
+	height: 150px;
+	width: 90%;
+	display: block;
+	border-radius: 0 15px 15px 0;
+	background-image:linear-gradient(#484e55, #3a3f44 20%,#272B30);
+	margin-right: 100px;
+}
+.console-body {
+	color: #AAA;
+	background-image:linear-gradient(#272B30, #3a3f44 80%,#484e55);
+/*	position: relative;*/
+/*	float: bottom;*/
+	display: block;
+/*	width: 90%;*/
+	height: 143px;
+	padding: 1px;
+	margin: 2px; 
+	overflow: auto;
+	overflow-x: hidden;
+
+/*	margin-bottom: 10px;*/
+/*	border: 1px solid black;*/
+}
+.actuator {
+	cursor: pointer;
+}
+.mqtt-widget {
+	position: absolute;
+}
+.mqtt-button {
+	height: 30px;
+	width: 30px;
+	position: relative;
+	float: top;
+	display: inline-block;
+}
+.mqtt-caption {
+	margin-bottom: 20px;
+	position: relative;
+	float: bottom;
+}
+

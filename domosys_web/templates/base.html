@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width"/>
+{% load staticfiles %}
+{% load static %}
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css" >
+	<link rel="stylesheet" type="text/css" href="/static/css/domosys_theme/jquery-ui-1.10.3.custom.css" >
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" >
+<!--	<link rel="stylesheet" type="text/css" href="/static/css/jquery-ui.css" >-->
+<!--	<link rel="stylesheet" type="text/css" href="static/css/{{ name }}.css" >-->
+	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="/static/js/jquery_cookie.js"></script>
+	<script type="text/javascript" src="/static/js/base.js" > </script>
+	<script type="text/javascript" src="/static/js/ws.js" > </script>
+<!--	<script type="text/javascript" src="/static/js/widgets.js" > </script>-->
+	<title>Domosys_org- {{ title }}</title>
+
+</head>
+<body>
+	{% include "alert.html" %}
+<span id="title">DOMOSYS_WEB</span>
+<!--<center>-->
+<section class="container" id="general">
+	{% block container %}{% endblock %}
+</section>
+<!--</center>-->
+<header class="fixed-menu" id="header-menu">
+<!-- include "header.html" -->
+	<nav id="global-menu">
+		<nav id="left-nav-menu">
+		<a class="header-button" href="#" id="home">HOME</a>
+		<a class="header-button" href="#" id="config">CONFIG</a>
+		<a class="header-button" href="#" id="stats">STATS</a>
+		</nav>
+			
+		<nav id="right-nav-menu">
+	<!--include "websocket.html"-->
+		<button class="socket-button off" id="socket-button">SOCKET</button>
+	<!--end "websocket.html"-->
+	<!--include "connected.html" -->
+{% if user.is_authenticated %}
+		<a class="header-button" id="logout-button" href="/logout">{{ user.username|upper }}</a>
+{% else %}
+		<a class="header-button" id="login-button" href="/login">LOGIN</a>
+{% endif %}
+	<!--end connected.html-->
+		</nav>
+	</nav>
+<!--end header.html-->
+</header>
+<!--include "navbar.html" -->
+<aside id="navbar" class="navbar">
+	<div class="bouton" id="navhide">&gt;</div>
+	<!--include "marvin.html"-->
+		<nav id="marvinbar">
+<div class="accordion" id="navbar">
+	<h5>MARVIN</h5>
+	<div>Ici, on discute avec Marvin</div>
+	<h5>SCENARS</h5>
+	<div class="scenars" id="scenars">ici, on sélect les scenars </div>
+	<h5>un autre</h5>
+	<div>Nam dui erat, auctor a, dignissim quis.</div>
+</div>
+		</nav>
+	<!--end "marvin.html"-->
+</aside>
+<div class="bouton" id="navshow">&lt;</div>
+<!-- end navbar.html -->
+<footer class="fixed-menu" id="footer-menu">
+<!--include "footer.html"-->
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">SOCKET</a></li>
+			<li><a href="#tabs-2">REDIS</a></li>
+			<li><a href="#tabs-3">MQTT</a></li>
+			<li><a href="#tabs-4">LOGS</a></li>
+			<li><a href="#tabs-5">TASKS</a></li>
+		</ul>
+		<div id="tabs-1">
+			<div class="console-body" id="socket"></div>
+		</div>
+		<div id="tabs-2">
+			<div class="console-body" id="redis">REDIS</div>
+		</div>
+		<div id="tabs-3">
+			<div class="console-body" id="mqtt"></div>
+		</div>
+		<div id="tabs-4">
+			<div class="console-body" id="logs">LOGS</div>
+		</div>
+		<div id="tabs-5">
+			<div class="console-body" id="tasks">TASKS</div>
+		</div>
+	<div class="bouton" id="foothide">&gt;</div>
+	</div>
+</footer>
+<div class="bouton" id="footshow">&gt;</div>
+<!--end "footer.html"-->
+</body>
+</html>
