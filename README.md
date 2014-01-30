@@ -45,8 +45,9 @@ What's needed
 
 What in the future
 ==================
-  * remove Sensors and Actuators from config page
+  * remove Sensors and Actuators from config page (let it to admin)
   * replace it with Scenars edition
   * Add Aliases system
   * Make Marvin listen to those Aliases
   * Store MQTT statuses
+  * plans, materials choices, stove type, 3D, écolo-goals, ... on github (CC)
