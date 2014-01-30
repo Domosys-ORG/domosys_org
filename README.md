@@ -14,7 +14,7 @@ Dry toilets, cleaned 'grey waters' by plants.
 Fisches borned in those resulting waters.
 
 Hacked CMV arduino based
-Hacked ventilator commanded throw a Velleman Kit (and Arduino PWM)
+Hacked ventilator commanded through a Velleman Dimmer Kit (and Arduino PWM)
 some strips LED installed (on Arduino PWM)
 an XMPP bot (as Jabber Contact) -called 'Marvin' : see H2G2-
 listening for commands, to send corresponding MQTT messages
