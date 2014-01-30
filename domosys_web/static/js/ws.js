@@ -23,6 +23,7 @@ function start_ws(){
 		setTimeout( (function(){$('#socket-button').removeClass("error");}), 1000);
 		alert("Websocket : Connection indisponible", "error");
 		console.log("Client Disconnected");
+		window.ws = false;
 	}
 	ws.onmessage = function(evt) {
 		logConsole('socket', evt.data);
