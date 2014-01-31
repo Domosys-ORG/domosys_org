@@ -34,8 +34,6 @@ Having installed (and to install), some (a lot ! ^^') more Sensors and Actuators
 domosys_org is the base of the project,
 domosys_web, the django based interface.
 
-Let's see what the future will give us ;)
-
 What's needed
 =============
   * a working PostgreSQL database (with django user access)
