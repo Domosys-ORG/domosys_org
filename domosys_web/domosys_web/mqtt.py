@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-__author__ = 'Damien Ulrich <dams@domosys.org>'
-__version__ = '0.1'
-__license__ = 'GNU General Public License version 3 or later'
-#__website__ = 'http://www.domosys.org/websvn'
-
 import sys
 #sys.path.append( "/usr/local/python" )
 
